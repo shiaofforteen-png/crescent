@@ -1,6 +1,7 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { Sparkles, Calendar, CheckCircle2 } from 'lucide-react';
 import { SparkleIcon } from './ToothIcon';
+import { IMAGES } from '../assets/images';
 
 interface BeforeAfterProps {
   onOpenBooking: () => void;
@@ -62,7 +63,7 @@ export const BeforeAfter: React.FC<BeforeAfterProps> = ({ onOpenBooking }) => {
           >
             {/* "After" Image (Background Full Layer) */}
             <img
-              src="/src/assets/images/smile_after_teeth_1794471000983.jpg"
+              src={IMAGES.smileAfter}
               alt="Smile Transformation After cosmetic dentistry treatment"
               className="absolute inset-0 w-full h-full object-cover"
               draggable="false"
@@ -74,7 +75,7 @@ export const BeforeAfter: React.FC<BeforeAfterProps> = ({ onOpenBooking }) => {
               style={{ width: `${sliderPosition}%` }}
             >
               <img
-                src="/src/assets/images/smile_before_teeth_1794470999761.jpg"
+                src={IMAGES.smileBefore}
                 alt="Smile Transformation Before cosmetic dentistry treatment"
                 className="absolute inset-0 w-full h-full object-cover max-w-none"
                 style={{

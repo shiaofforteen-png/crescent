@@ -2,6 +2,7 @@ import React from 'react';
 import { CheckCircle2, Phone, Sparkles } from 'lucide-react';
 import { ToothIcon, SparkleIcon } from './ToothIcon';
 import { CLINIC_CONFIG } from '../config/clinicData';
+import { IMAGES } from '../assets/images';
 
 interface AboutProps {
   onOpenBooking: () => void;
@@ -30,7 +31,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
               {/* Primary Photo in Organic Blob */}
               <div className="relative z-10 rounded-[36px] overflow-hidden shadow-[0_20px_50px_rgba(11,27,77,0.12)] border-4 border-white aspect-[4/3] bg-slate-100">
                 <img
-                  src="/src/assets/images/about_patient_smiling_1794470980357.jpg"
+                  src={IMAGES.aboutPatient}
                   alt="Doctor and patient smiling at Crescent Smile Dental Studio"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   loading="lazy"
@@ -40,7 +41,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
               {/* Secondary Overlapping Photo */}
               <div className="absolute -bottom-8 -right-4 sm:-bottom-10 sm:-right-8 z-20 w-3/5 rounded-[28px] overflow-hidden shadow-[0_16px_40px_rgba(11,27,77,0.16)] border-4 border-white aspect-[4/3] bg-slate-100 hidden sm:block">
                 <img
-                  src="/src/assets/images/clinic_operatory_modern_1794470979868.jpg"
+                  src={IMAGES.clinicOperatory}
                   alt="Modern dental operatory room in Crescent Arcade G-8 Markaz"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   loading="lazy"

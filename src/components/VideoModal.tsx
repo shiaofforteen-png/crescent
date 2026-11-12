@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Play, Pause, Volume2, VolumeX, ShieldCheck, Sparkles } from 'lucide-react';
 import { CLINIC_CONFIG } from '../config/clinicData';
+import { IMAGES } from '../assets/images';
 
 interface VideoModalProps {
   isOpen: boolean;
@@ -54,7 +55,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({
         {/* Video Canvas Simulation */}
         <div className="relative aspect-video w-full bg-slate-900 overflow-hidden">
           <img
-            src="/src/assets/images/clinic_operatory_modern_1794470979868.jpg"
+            src={IMAGES.clinicOperatory}
             alt="Crescent Smile Dental Studio modern operatory"
             className={`w-full h-full object-cover transition-transform duration-700 ${isPlaying ? 'scale-105' : 'scale-100'}`}
           />

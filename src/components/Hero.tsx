@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Play, Calendar, User, Phone, Clock, Star, Sparkles, CheckCircle2 } from 'lucide-react';
 import { SparkleIcon } from './ToothIcon';
 import { CLINIC_CONFIG } from '../config/clinicData';
+import { IMAGES } from '../assets/images';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -130,7 +131,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideo }) => {
             {/* Dentist Cutout Image */}
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(11,27,77,0.12)] border-4 border-white max-w-[340px] sm:max-w-[400px]">
               <img
-                src="/src/assets/images/hero_dentist_portrait_1794470979650.jpg"
+                src={IMAGES.heroDentist}
                 alt="Lead Dental Specialist at Crescent Smile Dental Studio Islamabad"
                 className="w-full h-auto object-cover transform hover:scale-102 transition-transform duration-500"
                 width={400}

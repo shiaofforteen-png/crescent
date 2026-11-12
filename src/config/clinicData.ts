@@ -4,6 +4,8 @@
  * Editable in one place to easily modify clinic details, phone numbers, doctors, and copy.
  */
 
+import { IMAGES } from '../assets/images';
+
 export const CLINIC_CONFIG = {
   businessName: "Crescent Smile Dental Studio",
   tagline: "Gentle care. Confident smiles.",
@@ -58,7 +60,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Deep Periodontal Gum Assessment",
       "Custom Fluoride & Remineralization Therapy"
     ],
-    image: "/src/assets/images/dental_procedure_care_1794471000679.jpg",
+    image: IMAGES.dentalProcedure,
     featured: true,
   },
   {
@@ -74,7 +76,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Zirconia Aesthetic Final Crown",
       "Lifetime Structural Warranty"
     ],
-    image: "/src/assets/images/clinic_operatory_modern_1794470979868.jpg",
+    image: IMAGES.clinicOperatory,
   },
   {
     id: "teeth-whitening",
@@ -89,7 +91,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Built-in Desensitizing Treatment",
       "Complimentary At-Home Maintenance Kit"
     ],
-    image: "/src/assets/images/smile_after_teeth_1794471000983.jpg",
+    image: IMAGES.smileAfter,
   },
   {
     id: "root-canal",
@@ -104,7 +106,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Thermal Bio-Ceramic Sealant",
       "Post & Core Crown Prep Ready"
     ],
-    image: "/src/assets/images/dental_procedure_care_1794471000679.jpg",
+    image: IMAGES.dentalProcedure,
   },
   {
     id: "braces-aligners",
@@ -119,7 +121,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Zero Dietary Restrictions",
       "Monthly Check-in / Remote Monitoring"
     ],
-    image: "/src/assets/images/doctor_zainab_malik_1794470999411.jpg",
+    image: IMAGES.doctorZainab,
   },
   {
     id: "smile-makeover",
@@ -134,7 +136,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Natural Multi-Layered Translucency",
       "Long-lasting Stain Resistance"
     ],
-    image: "/src/assets/images/about_patient_smiling_1794470980357.jpg",
+    image: IMAGES.aboutPatient,
   },
 ];
 
@@ -155,7 +157,7 @@ export const DOCTORS_DATA: DoctorProfile[] = [
     qualifications: "BDS, RDS, M.Sc. Aesthetic Dentistry (UK)",
     experience: "12+ Years Experience",
     bio: "Passionate about artistic smile transformations, Dr. Ayesha has designed over 2,500 smiles in Islamabad with gentle precision, porcelain veneers, and modern bonding.",
-    image: "/src/assets/images/doctor_ayesha_khan_1794470981497.jpg",
+    image: IMAGES.doctorAyesha,
     specialties: ["Porcelain Veneers", "Digital Smile Design", "Laser Whitening", "Composite Artistry"],
   },
   {
@@ -164,7 +166,7 @@ export const DOCTORS_DATA: DoctorProfile[] = [
     qualifications: "BDS, FCPS (Oral & Maxillofacial Surgery)",
     experience: "15+ Years Experience",
     bio: "Specializing in painless surgical extractions, bone grafting, and immediate-load dental implants, Dr. Bilal brings hospital-grade surgical expertise to Crescent Smile.",
-    image: "/src/assets/images/doctor_bilal_tariq_1794470981610.jpg",
+    image: IMAGES.doctorBilal,
     specialties: ["Dental Implants", "Wisdom Tooth Surgery", "Bone Regeneration", "Sedation Dentistry"],
   },
   {
@@ -173,7 +175,7 @@ export const DOCTORS_DATA: DoctorProfile[] = [
     qualifications: "BDS, M.Orth, Certified Clear Aligner Specialist",
     experience: "10+ Years Experience",
     bio: "An advocate for comfortable, discreet teeth straightening for adults and children alike. Dr. Zainab creates healthy, balanced bites that boost long-term facial aesthetics.",
-    image: "/src/assets/images/doctor_zainab_malik_1794470999411.jpg",
+    image: IMAGES.doctorZainab,
     specialties: ["Clear Aligners", "Ceramic Braces", "Early Interceptive Orthodontics", "TMJ Therapy"],
   },
 ];
