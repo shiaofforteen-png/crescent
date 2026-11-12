@@ -1,0 +1,6 @@
+{
+  "name": "Crescent Smile Dental Studio",
+  "description": "Gentle care. Confident smiles. Premium dental clinic in G-8 Markaz, Islamabad offering painless general, cosmetic, implant, and family dentistry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
